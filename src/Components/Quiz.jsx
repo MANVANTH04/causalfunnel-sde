@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import confetti from "canvas-confetti";
-import QuizStart from "../components/QuizStart";
-import QuizQuestion from "../components/QuizQuestion";
-import QuizProgressBar from "../components/QuizProgressBar";
+import QuizStart from "../Components/QuizStart";
+import QuizQuestion from "../Components/QuizQuestion";
+import QuizProgressBar from "../Components/QuizProgressBar";
 
 const QUIZ_API = "https://opentdb.com/api.php?amount=15&type=multiple";
 

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import QuizResultCharts from "../components/QuizResultsCharts";
-import QuizReviewList from "../components/QuizReviewList";
-import QuizActions from "../components/QuizActions";
+import QuizResultCharts from "../Components/QuizResultsCharts";
+import QuizReviewList from "../Components/QuizReviewList";
+import QuizActions from "../Components/QuizActions";
 
 function Results() {
   const location = useLocation();
