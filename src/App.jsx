@@ -5,6 +5,8 @@ import Results from "./pages/Results"
 import Test from "./pages/Test"
 import Home from "./pages/Home"
 import {  BrowserRouter, Routes, Route } from 'react-router-dom'
+import {AuthProvider} from './context/AuthContext'
+import PrivateRoute from './Components/PrivateRouter'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,15 +14,17 @@ function App() {
   return (
     <>
     <div className="min-h-screen bg-gray-900">
-    <div>Home | Test | Login | Signup</div>
+    <div>Home | Test | Login | Signup | email:- random1user802@gmail.com | pass :- 12345678</div>
     <BrowserRouter>
+    <AuthProvider>
     <Routes>
-      <Route path='/' element= {<Home/>}/>
-      <Route path = "/Test" element={<Test/>}/>
-      <Route path = "/Results" element = {<Results/>}/>
-      <Route path = "/Signup " element = {<Signup/>}/>
+      <Route path='/' element= {<PrivateRoute> <Home/> </PrivateRoute>}/>
+      <Route path = "/Test" element={<PrivateRoute>   <Test/> </PrivateRoute>}/>
+      <Route path = "/Results" element = {<PrivateRoute>  <Results/> </PrivateRoute>}/>
+      <Route path = "/signup " element = {<Signup/>}/>
       <Route path = "/Login" element = {<Login/>}/>
     </Routes>
+    </AuthProvider>
   
     </BrowserRouter>
     </div>

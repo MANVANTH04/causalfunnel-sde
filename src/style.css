@@ -352,3 +352,77 @@ body {
 .question-number {
   font-weight: bold;
 }
+.div-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  gap: 1rem;
+  background-color: #0f172a;
+}
+
+.div-center input,
+.div-center button {
+  padding: 0.75rem 1rem;
+  width: 300px;
+  font-size: 1rem;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  outline: none;
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.div-center input::placeholder {
+  color: #94a3b8;
+}
+
+.div-center input:focus {
+  border-color: #3b82f6;
+}
+
+.div-center button {
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.div-center button:hover {
+  background-color: #2563eb;
+}
+
+.div-center h2 {
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+.signin-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-hint {
+  margin-top: -15rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #f8fafc;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  margin-left: 0.3rem;
+  font-size: 0.95rem;
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.link-button:hover {
+  color: #2563eb;
+}
