@@ -5,7 +5,7 @@ import Results from "./pages/Results"
 import Test from "./pages/Test"
 import Home from "./pages/Home"
 import {  BrowserRouter, Routes, Route } from 'react-router-dom'
-import {AuthProvider} from './context/AuthContext'
+import {AuthProvider} from './Context/AuthContext'
 import PrivateRoute from './Components/PrivateRouter'
 
 function App() {
